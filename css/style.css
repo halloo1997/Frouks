@@ -43,6 +43,10 @@ main{
 
 }
 
+
+h1{
+	font-size: 50px;
+}
 section{
 	/*background: rgb(209, 252, 252);*/
 	padding: 25px;
