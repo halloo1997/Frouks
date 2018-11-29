@@ -1,10 +1,26 @@
 
+@media screen and (min-width: 768px){
+	
+	.thumbnail{
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 250px;
+	}
+	
+	.grid-container{
+		display: grid;
+		grid-template-columns: repeat(2, min-content);
+		grid-gap: 100px;
+	}
+	
+}
 
 
 @media screen and (min-width: 1024px){
 	
 	.header-main{
-		border-bottom: solid 1px #5b4998;
+		border-bottom: solid 2px #5b4998;
 	}
 	
 	.logo{
@@ -19,19 +35,19 @@
 		display: inline-block;
 	}
 	
+	.nav-item::after{
+		content: &#9662;
+		display: inline;
+	}
+	
 	.grid-container{
 		padding: 15px;
 		margin-top: 25px;
-		background: #0e7fa7;
-		display: grid;
 		grid-template-columns: repeat(3, min-content);
 	}
 	
 	.thumbnail{
-		margin: 0;
-		padding: 0;
-		display: block;
-		width: 100px;
+		width: 250px;
 	}
 
 }

@@ -1,1 +1,0 @@
-horizontaal: 800px
