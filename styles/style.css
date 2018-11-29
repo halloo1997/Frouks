@@ -1,18 +1,39 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+
 body{
 	margin: 0;
 	padding: 0;
 }
 
 
-.main-header{
-	text-align: center;
-	border-bottom: solid 1px #5b4998;
+ul, a{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+@font-face{
+	
+}
+
+
+.header-main{
+	margin: 0;
+	padding: 0;
 }
 
 
 .logo{
-	margin: 10px;
+	width: 100%;
+	display: block;
 }
+
 
 .top-nav{
 	padding: 0;
@@ -22,12 +43,27 @@ body{
 	overflow: hidden;
 }
 
-.nav-item{
+
+.menu-button{
 	display: block;
+	padding: 10px;
+	font-size: 25px;
+	color: #5b4998;
+}
+
+
+
+.nav-item{
+	font-weight: bold;
+	display: none;
 	list-style-type: none;
 	font-size: 20px;
 }
 
+
+.show{
+	display: block;
+}
 
 
 .nav-item a{
@@ -37,51 +73,27 @@ body{
 	padding: 20px 40px;
 }
 
-.nav-item img{
-	width: 50px;
-	cursor: pointer;
-}
 
 .nav-item a:hover{
 	color: #ff1493;
 }
 
-.active a{
+
+.link-active a{
 	color: #ff1493;
 }
 
 
-
-section{
-	/*background: rgb(209, 252, 252);*/
-	padding: 25px;
-}
-
-
-h1{
-	text-align: center;
-	font-size: 45px;
-	color: #3b295c;
-}
-
 .grid-container{
-	text-align: center;
-	width: 60%;
-	padding: 20px;
-	margin: 0px auto;
-	text-align: center;
-	display: grid;
-	grid-template-columns: repeat(6, min-content);
-	grid-gap: 50px;
-	justify-content: center;
+	margin: 0;
+	background: #0e7fa7;
+	display: block;
 }
 
 
 .thumbnail{
-	max-width: 100px;
-	height: 100px;
-	border: 20px solid indigo;
-	border-radius: 50%;
+	margin: 0;
+	width: 100%;
 }
 
 
