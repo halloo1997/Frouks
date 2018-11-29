@@ -30,7 +30,7 @@ ul, a{
 
 
 .logo{
-	margin: 10px auto;
+	margin: 0px auto;
 	width: 90%;
 	display: block;
 }
@@ -64,6 +64,7 @@ ul, a{
 
 .show{
 	display: block;
+	animation: slideIn 5s;
 }
 
 
@@ -103,4 +104,15 @@ ul, a{
 	content: "";
 	display: block;
 	clear: both;
+}
+
+
+@keyframes slideIn{
+	0%{
+		height: 0;
+	}
+	
+	100%{
+		height: auto;
+	}
 }
