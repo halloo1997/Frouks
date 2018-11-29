@@ -2,5 +2,19 @@
 
 
 @media screen and (min-width: 1024px){
+	.header-main{
+		border-bottom: solid 1px #5b4998;
+	}
 	
+	.logo{
+		width: auto;
+	}
+	
+	.menu-button{
+		display: none;
+	}
+	
+	.nav-item{
+		display: inline-block;
+	}
 }
