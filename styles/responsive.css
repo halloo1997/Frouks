@@ -2,6 +2,7 @@
 
 
 @media screen and (min-width: 1024px){
+	
 	.header-main{
 		border-bottom: solid 1px #5b4998;
 	}
@@ -17,4 +18,20 @@
 	.nav-item{
 		display: inline-block;
 	}
+	
+	.grid-container{
+		padding: 15px;
+		margin-top: 25px;
+		background: #0e7fa7;
+		display: grid;
+		grid-template-columns: repeat(3, min-content);
+	}
+	
+	.thumbnail{
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 100px;
+	}
+
 }

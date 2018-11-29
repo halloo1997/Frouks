@@ -31,7 +31,7 @@ ul, a{
 
 .logo{
 	margin: 0px auto;
-	width: 90%;
+	width: 85%;
 	display: block;
 }
 
@@ -47,7 +47,7 @@ ul, a{
 
 .menu-button{
 	display: block;
-	padding: 10px;
+	padding: 15px;
 	font-size: 25px;
 	color: #5b4998;
 }
@@ -64,7 +64,6 @@ ul, a{
 
 .show{
 	display: block;
-	animation: slideIn 5s;
 }
 
 
@@ -87,6 +86,7 @@ ul, a{
 
 
 .grid-container{
+	padding: 15px;
 	margin: 0;
 	background: #0e7fa7;
 	display: block;
@@ -94,9 +94,12 @@ ul, a{
 
 
 .thumbnail{
-	margin: 0;
+	display: block;
+	margin: 20px auto;
 	padding: 0;
-	width: 100%;
+	width: 80%;
+	border-radius: 50%;
+	border: solid #fff;
 }
 
 
@@ -104,15 +107,4 @@ ul, a{
 	content: "";
 	display: block;
 	clear: both;
-}
-
-
-@keyframes slideIn{
-	0%{
-		height: 0;
-	}
-	
-	100%{
-		height: auto;
-	}
 }
