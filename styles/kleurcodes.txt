@@ -1,0 +1,16 @@
+
+Blauw:
+#0e7fa7
+
+
+Paars:
+#5b4998
+
+
+Wit:
+#ffffff
+
+
+
+
+roze achtergrond hoeft niet.
