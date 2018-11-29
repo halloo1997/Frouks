@@ -6,7 +6,7 @@ body{
 
 .main-header{
 	text-align: center;
-	border-bottom: solid purple;
+	border-bottom: solid 1px #5b4998;
 }
 
 
@@ -23,7 +23,7 @@ body{
 }
 
 .nav-item{
-	display: inline-block;
+	display: block;
 	list-style-type: none;
 	font-size: 20px;
 }
@@ -32,7 +32,7 @@ body{
 
 .nav-item a{
 	text-decoration: none;
-	color: #3b295c;
+	color: #5b4998;
 	display: block;
 	padding: 20px 40px;
 }
