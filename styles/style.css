@@ -102,7 +102,11 @@ ul, a{
 }
 
 
-.thumbnail{
+.item-title{
+	text-align: center;
+}
+
+.item-thumbnail{
 	display: block;
 	margin: 20px auto;
 	padding: 0;

@@ -1,15 +1,18 @@
 
 @media screen and (min-width: 768px){
 	
-	.thumbnail{
+	.item-thumbnail{
 		margin: 0;
 		padding: 0;
 		display: block;
-		width: 150px;
+		width: 175px;
 	}
 	
 	.grid-container{
 		display: grid;
+		justify-content: center;
+		grid-column-gap: 150px;
+		grid-row-gap: 75px;
 		grid-template-columns: repeat(2, min-content);
 	}
 	
@@ -22,16 +25,20 @@
 		
 	}
 	
+	
 	.logo{
 		width: 50%;
 	}
+	
 	
 	.menu-button{
 		display: none;
 	}
 	
+	
 	.top-nav{
 	}
+	
 	
 	.nav-item{
 		display: inline-block;
@@ -41,6 +48,28 @@
 	.grid-container{
 		padding: 20px;
 		grid-template-columns: repeat(3, min-content);
+	}
+
+	.item-thumbnail{
+		cursor: pointer;
+	}
+	
+	
+	.item-description{
+		display: none;
+		bottom: 0;
+		left: 25%;
+		background: #fff;
+		border: solid 5px #5b4998;
+		border-radius: 10px;
+		margin: 10px;
+		padding: 20px;
+		position: fixed;
+	}
+	
+	.item-thumbnail:hover + .item-description{
+		transition: 2s;
+		display: block;
 	}
 	
 
