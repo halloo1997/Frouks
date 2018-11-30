@@ -67,8 +67,8 @@
 		position: fixed;
 	}
 	
-	.item-thumbnail:hover + .item-description{
-		transition: 2s;
+	
+	.item-thumbnail:hover ~ .item-description{
 		display: block;
 	}
 	
