@@ -6,6 +6,7 @@
 		padding: 0;
 		display: block;
 		width: 175px;
+		height: 175px;
 	}
 	
 	.grid-container{
@@ -49,7 +50,7 @@
 		padding: 20px;
 		grid-template-columns: repeat(3, min-content);
 	}
-
+	
 	.item-thumbnail{
 		cursor: pointer;
 	}
@@ -61,6 +62,7 @@
 		left: 25%;
 		background: #fff;
 		border: solid 5px #5b4998;
+		color: #5b4998;
 		border-radius: 10px;
 		margin: 10px;
 		padding: 20px;
