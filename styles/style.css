@@ -12,8 +12,8 @@ body{
 }
 
 
-ul, a{
-	margin: 0;
+ul{
+	margin: 0px;
 	padding: 0;
 }
 
@@ -48,13 +48,12 @@ ul, a{
 	overflow: hidden;
 }
 
-.sticky{
-	margin-top: 1px;
+.fixed{
 	position: fixed;
 	top: 0;
-	z-index: 100;
 	width: 100%;
 }
+
 
 .search{
 	position: absolute;

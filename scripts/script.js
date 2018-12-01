@@ -3,16 +3,19 @@ var i;
 
 
 
-var topNav = document.getElementsByClassName("top-nav");
+var topNav = document.getElementsByClassName("top-nav")[0];
 
 
+
+var navOffset = topNav.offsetTop;
 
 
 window.addEventListener("scroll", function(){
-	if(window.pageYOffset >= topNav[0].offsetTop){
-		topNav[0].classList.add("sticky");
+	console.log(topNav.offsetTop);
+	if(window.pageYOffset >= navOffset){
+		topNav.classList.add("fixed");
 	} else{
-		topNav[0].classList.remove("sticky");
+		topNav.classList.remove("fixed");
 	}
 })
 
@@ -29,20 +32,14 @@ window.addEventListener("click", function(ev){
 
 
 
-var menuButton = document.getElementsByClassName("menu-button");
+var menuButton = document.getElementsByClassName("menu-button")[0];
 var navItem = document.getElementsByClassName("nav-item");
 
 
-menuButton[0].addEventListener("click", function(){
-	toggleClass(navItem, "show");
+menuButton.addEventListener("click", function(){
+	for(i = 0; i < navItem.length; i++){
+		navItem[i].classList.toggle("show");
+	}
 });
 
 
-
-function toggleClass(elementName, className){
-
-	for(i = 0; i < elementName.length; i++){
-		elementName[i].classList.toggle(className);
-	}
-
-}
