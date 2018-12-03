@@ -1,9 +1,20 @@
 
+
+
+@media screen and (min-width: 425px){
+	
+	.item-thumbnail{
+		width: 200px;
+		height: 200px;
+	}
+	
+}
+
+
+
 @media screen and (min-width: 768px){
 	
 	.item-thumbnail{
-		padding: 0;
-		display: block;
 		width: 175px;
 		height: 175px;
 	}
