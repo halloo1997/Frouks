@@ -2,7 +2,6 @@
 @media screen and (min-width: 768px){
 	
 	.item-thumbnail{
-		margin: 0;
 		padding: 0;
 		display: block;
 		width: 175px;
@@ -10,11 +9,12 @@
 	}
 	
 	.grid-container{
+		padding: 25px;
 		display: grid;
 		justify-content: center;
 		grid-column-gap: 150px;
 		grid-row-gap: 75px;
-		grid-template-columns: repeat(2, min-content);
+		grid-template-columns: repeat(2, 200px);
 	}
 	
 }
@@ -23,12 +23,12 @@
 @media screen and (min-width: 1024px){
 	
 	.header-main{
-		
+		position: relative;
 	}
 	
 	
 	.logo{
-		width: 50%;
+		width: 680px;
 	}
 	
 	
@@ -46,10 +46,33 @@
 	}
 	
 	
-	.grid-container{
-		padding: 20px;
-		grid-template-columns: repeat(3, min-content);
+	.search{
+		display: block;
+		position: absolute;
+		right: 0; 
+		background: #fff;
+		border: solid 2px #5b4998;
+		border-radius: 15px;
+		margin: 45px;
+		padding: 5px 15px;
 	}
+	
+	
+	.search-button{
+		color: #5b4998;
+		cursor: pointer;
+	}
+
+	
+	.search-button:hover{
+	
+	}	
+	
+	
+	.grid-container{
+		grid-template-columns: repeat(3, 200px);
+	}
+	
 	
 	.item-thumbnail{
 		cursor: pointer;
@@ -58,7 +81,7 @@
 	
 	.item-description{
 		display: none;
-		bottom: 0;
+		bottom: 0%;
 		left: 25%;
 		background: #fff;
 		border: solid 5px #5b4998;
@@ -69,10 +92,9 @@
 		position: fixed;
 	}
 	
-	
+
 	.item-thumbnail:hover ~ .item-description{
 		display: block;
 	}
 	
-
 }
