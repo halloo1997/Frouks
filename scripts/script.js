@@ -1,7 +1,7 @@
 var i;
 
 
-var topNav = document.getElementsByClassName("top-nav")[0];
+var topNav = document.getElementsByClassName("nav-top")[0];
 
 
 /*offset navigation*/
