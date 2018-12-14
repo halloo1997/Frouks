@@ -1,15 +1,21 @@
 var i;
 
 
+
+
+/*$('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');*/
+
+
 var topNav = document.getElementsByClassName("nav-top")[0];
 
 
-/*offset navigation*/
+//offset navigation
 var navOffset = topNav.offsetTop;
 
 
 
-/*placeholder navigation*/
+
+//placeholder navigation
 var placeholder = document.createElement("div");
 
 
@@ -17,37 +23,49 @@ placeholder.id = "placeholder";
 
 placeholder.style.height = topNav.offsetHeight + "px";
 
-topNav.parentNode.insertBefore(placeholder, topNav);
-
-placeholder.appendChild(topNav);
 
 
+//Change offsetTop and offsetHeight on resize
 window.addEventListener("resize", function(){
+	if(window.pageYOffset == placeholder.offsetTop){
+		navOffset = topNav.offsetTop;
+	}
+	
 	placeholder.style.height = topNav.offsetHeight + "px";
-})
+	
+});
 
 
-/*scroll event*/
+/*placeholder.appendChild(topNav);*/
+
+
+//scroll event
 window.addEventListener("scroll", function(){
-
-
+	
 	if(window.pageYOffset >= navOffset){
 		topNav.classList.add("fixed");
+		topNav.parentNode.insertBefore(placeholder, topNav);	
 		
 	} else{
 		topNav.classList.remove("fixed");
+		 
+		if(document.getElementById("placeholder")){
+			topNav.parentNode.removeChild(placeholder);
+		}
+		
 	}
 	
 });
 
 
 
-/*hamburger menu*/
+//hamburger menu
 var menuButton = document.getElementsByClassName("menu-button")[0];
 var navItem = document.getElementsByClassName("nav-item");
 
 
 menuButton.addEventListener("click", function(){
+	
 	for(i = 0; i < navItem.length; i++){
 		navItem[i].classList.toggle("show");
 	}
@@ -59,9 +77,35 @@ menuButton.addEventListener("click", function(){
 
 
 
-/*testing*/
+//testing
+
 window.addEventListener("click", function(ev){
 	console.log(ev.target);
+	
 });
 
 
+
+
+
+
+var itemThumbnail = document.getElementsByClassName("item-thumbnail");
+var modal = document.getElementsByClassName("modal");
+
+for(i = 0; i < itemThumbnail.length; i++){
+	
+	itemThumbnail[i].addEventListener("click", function(){
+		console.log(itemThumbnail[0]);
+		showModal();
+	});
+	
+}
+
+
+function showModal(){
+	
+	for(i = 0; i < modal.length; i++){
+		modal[i].classList.add("show");
+	}
+	
+}

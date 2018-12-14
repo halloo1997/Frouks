@@ -2,10 +2,13 @@
 
 
 @media screen and (min-width: 425px){
-	
 	.item-thumbnail{
 		width: 200px;
 		height: 200px;
+	}
+	
+	.logo{
+		width: 425px;
 	}
 	
 }
@@ -14,9 +17,22 @@
 
 @media screen and (min-width: 768px){
 	
+	
+	.logo{
+		width: 600px;
+	}
+	
 	.item-thumbnail{
+		margin: 0 auto;
 		width: 175px;
 		height: 175px;
+	}
+	
+	
+	.section-text{
+		width: 650px;
+		text-align: left;
+		margin: 20px auto;
 	}
 	
 	.grid-container{
@@ -28,7 +44,9 @@
 		grid-template-columns: repeat(2, 200px);
 	}
 	
+		
 }
+
 
 
 @media screen and (min-width: 1024px){
@@ -49,6 +67,7 @@
 	
 	
 	.nav-top{
+		overflow: hidden;
 	}
 	
 	
@@ -73,15 +92,36 @@
 		color: #5b4998;
 		cursor: pointer;
 	}
-
 	
-	.search-button:hover{
-	
-	}	
+	.i{
+		color: #5b4998;
+		cursor: pointer;
+		display: inline-block;
+		padding: 10px 40px;
+	}
 	
 	
 	.grid-container{
 		grid-template-columns: repeat(3, 200px);
+	}
+	
+	
+	.grid-columns-four{
+		grid-template-columns: repeat(4, 150px);
+		grid-column-gap: 50px;
+		grid-row-gap: 50px;		
+	}
+	
+	
+	
+	.grid-columns-four .item-thumbnail{
+		width: 125px;
+		height: 125px;
+	}
+	
+	
+	.item-title{
+		font-size: 18px;
 	}
 	
 	
@@ -107,5 +147,45 @@
 	.item-thumbnail:hover ~ .item-description{
 		display: block;
 	}
+	
+	
+
+		
+	#example2{
+		margin: 25px auto;
+		padding: 0px;
+		background: #fff;
+		width: 850px;
+		border-radius: 200px 10px 10px 200px;
+		overflow: auto;
+		/*margin-left: 80px;*/
+	}
+
+	#example3{
+		margin: 25px auto;
+		padding: 0px;
+		background: #fff;
+		width: 850px;
+		border-radius: 10px 200px 200px 10px;
+		overflow: auto;
+		/*margin-left: 80px;*/
+	}
+	
+	.image{
+	}
+
+
+	.Hoofd_tekst{ 
+		display: inline-block;
+		width: 35%;
+		padding: 0;
+		margin: 0 auto;
+		color: #5b4998;
+	}
+	
+	.Hoofd_tekst p{
+		margin: 0;
+	}
+	
 	
 }
